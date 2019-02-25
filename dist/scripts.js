@@ -1,26 +1,26 @@
 function startTime() {
   var e = [
-      "January",
-      "February",
-      "March",
-      "April",
-      "May",
-      "June",
-      "July",
-      "August",
-      "September",
-      "October",
-      "November",
-      "December"
+      "1",
+      "2",
+      "3",
+      "4",
+      "5",
+      "6",
+      "7",
+      "8",
+      "9",
+      "10",
+      "11",
+      "12"
     ],
     t = [
-      "Sunday",
-      "Monday",
-      "Tuesday",
-      "Wednesday",
-      "Thursday",
-      "Friday",
-      "Saturday"
+      "Sun",
+      "Mon",
+      "Tue",
+      "Wed",
+      "Thu",
+      "Fri",
+      "Sat"
     ],
     n = new Date(),
     r = [n.getHours(), n.getMinutes(), n.getSeconds()],
@@ -37,10 +37,9 @@ function startTime() {
     (i = i ? i : 12),
     (a = a < 10 ? "0" + a : a),
     (s = s < 10 ? "0" + s : s),
-    (document.getElementById("time").innerHTML =
-      i + ":" + a + ":" + s + " " + u),
+   
     (document.getElementById("date").innerHTML =
-      c + ", " + f + " " + l + ", " + p);
+    r[0]+":"+a+" "+c + " " + f + "/" + l);
   setTimeout(startTime, 500);
 }
 function randomQuote() {
