@@ -6293,7 +6293,7 @@ function gmailRequest() {
   })(this),
   $(function() {
     startTime(),
-      randomQuote(),
+      //randomQuote(),
       //randomBackground(),
       bindMousetraps(),
       geolocWeather(),
