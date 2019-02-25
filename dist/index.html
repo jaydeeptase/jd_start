@@ -11,10 +11,14 @@
 <body>
     <div id="background"></div><canvas id="snow"></canvas><div class="centerWrapper">
         <div class="large no-transform">
-            <div id="time" class="right"></div>
-            <div id="weather" class="right"> 
+            <div id="time" class="left"></div>
+            <div id="weather" class="right text-right">Loading&hellip;</div>
+        </div>
+        <div class="small no-transform">
+            <div id="date" class="left"></div>
+            <div id="details" class="right text-right">
                 <script type='text/javascript' src='https://darksky.net/widget/default-small/41.5645,-93.7595/us12/en.js?width=75%&height=45&title=Full Forecast&textColor=ffffff&bgColor=transparent&transparency=true&skyColor=undefined&fontFamily=Trebuchet MS&customFont=&units=us'></script>
-           </div>
+            </div>
         </div>
         <ul class="box" id="box">
             <div class="left">
