@@ -239,7 +239,7 @@ function getWeather(e) {
 function geolocWeather() {
   "geolocation" in navigator
     ? navigator.geolocation.getCurrentPosition(function(e) {
-        getWeather(e.coords.latitude + "," + e.coords.longitude);
+        getWeather("41.573739, −93.750359");
       })
     : getWeather("40.4406, -79.9959");
 }
